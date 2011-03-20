@@ -1,10 +1,12 @@
-= The Tigerblood Development Kit
+The Tigerblood Development Kit
+==============================
 
 - Tigerblood signed commits.
 - The *winning* method.
 - The handy tiger-commit command.
 
-== Tigerblood Driven Development
+Tigerblood Driven Development
+-----------------------------
 
 Install:
 
@@ -14,6 +16,7 @@ In your #winning project, just run:
 
 > enable-tbdd
 
-== License
+License
+-------
 
 [WTFPL](https://secure.wikimedia.org/wikipedia/en/wiki/WTFPL)
