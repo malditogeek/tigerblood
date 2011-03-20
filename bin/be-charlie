@@ -1,0 +1,14 @@
+
+require 'rubygems'
+require 'tigerblood'
+
+gpg = `which gpg`
+gpg.strip!
+
+if gpg.empty?
+  puts "No GPG, no #winning"
+  puts "\nThe warlock says: brew install gnupg\n"
+else
+  winning
+  system("#{gpg} --import \"#{ENV['GEM_HOME']}/gems/tigerblood-1.0.0/keys/tigerblood_sec.gpg\")
+end

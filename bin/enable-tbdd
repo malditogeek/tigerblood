@@ -1,0 +1,16 @@
+
+hook      = "#{ENV['GEM_HOME']}/gems/tigerblood-1.0.0/hooks/commit-msg"
+hook_path = "./.git/hooks/"
+
+system("cp \"#{hook}\" \"#{hook_path}\"")
+
+puts
+puts "+" * 31
+puts " Tigerblood Driven Development"
+puts "+" * 31
+puts
+puts " Tag your commit messages with the #winning words"
+puts " and Charlie will sign 'em with his tigerblood!"
+puts
+puts " Use tiger-commit for full effect."
+puts

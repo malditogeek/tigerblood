@@ -1,0 +1,1 @@
+system("git commit --author=\"Charlie Sheen <tigerblooddev@gmail.com>\" #{ARGV.join(' ')}")

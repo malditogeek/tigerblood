@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'tigerblood'
+
+commit = ::File.open(ARGV[0], 'r+')
+if commit.read.match "#winning|#tigerblood|#tbdd"
+  commit << "\n\nSigned-off-by: Charlie Sheen <tigerblooddev@gmail.com>"
+
+  winning
+
+  # Only for #winning Macs
+  say = `which say`
+  say.strip!
+  system("#{say} -v Bruce bi-winning\!") unless say.empty?
+end
